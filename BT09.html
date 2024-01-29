@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+          padding: 8px;
+          margin-bottom: 10px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+        }
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter Table</h1>
+    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search for names..">
+
+    <table id="dataTable">
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <th>Alfreds Futterkiste</th>
+            <th>Germany</th>
+        </tr>
+        <tr>
+            <th>Berglunds snabbkop</th>
+            <th>Sweden</th>
+        </tr>
+        <tr>
+            <th>Island Trading</th>
+            <th>UK</th>
+        </tr>
+        <tr>
+            <th>Koniglich Essen</th>
+            <th>Germany</th>
+        </tr>
+        <tr>
+            <th>Laughing Bacchus Winecellars</th>
+            <th>Canada</th>
+        </tr>
+        <tr>
+            <th>Magazzini Alimentari Riuniti</th>
+            <th>Italy</th>
+        </tr>
+        <tr>
+            <th>North/South</th>
+            <th>UK</th>
+        </tr>
+        <tr>
+            <th>Paris specialites</th>
+            <th>France</th>
+        </tr>
+        <script src="./BT09.js"></script>
+    </table>
+</body>
+</html>
